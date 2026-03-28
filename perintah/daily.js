@@ -12,7 +12,7 @@ module.exports = {
     const now = Date.now();
 
     // Ambil data user
-    let user = await userData.get(userID) || {};
+    const user = await userData.get(userID) || {};
     if (!user.money) user.money = 0;
     if (!user.exp) user.exp = 0;
     if (!user.lastDaily) user.lastDaily = 0;
@@ -35,11 +35,12 @@ module.exports = {
     const expGacha = Math.floor(Math.random() * 30) + 1; // 1-50
 
     // Update user data
-    user.money += uangGacha;
-    user.exp += expGacha;
-    user.lastDaily = now;
-
-    await userData.set(userID, user);
+    const uangFinal = user.money + uangGacha;
+    const expFinal = user.exp + expGacha;
+    
+    await userData.set(userID, 'lastDaily', now)
+    await userData.set(userID, 'money', uangFinal);
+    await userData.set(userID, 'exp', expFinal)
 
     return api.sendMessage(
       `Daily!\nUang: $${uangGacha}\nEXP: ${expGacha}`,
