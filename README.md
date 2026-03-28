@@ -1,47 +1,73 @@
-![Pikachu](https://shojib.sgp1.cdn.digitaloceanspaces.com/uploads/1739983324582_868ih2ts058.png)
+<p align="center">
+  <img src="./func/xfest.jpg" width="200" alt="XFEST Logo"/>
+</p>
 
-<h1 align="center">Azura Akari</h1>
+<h1 align="center">XFEST FACEBOOK BOT</h1>
 
-> Remake By Rahez <br>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Simple+Messenger+Bot;Fast+%26+Lightweight;Easy+to+Customize;Powered+by+Node.js" />
+</p>
 
-![hady](https://skillicons.dev/icons?i=html,css,js,nodejs,bash&theme=dark) 
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,bash&theme=dark" />
+</p>
 
-## Intro
+---
 
-Nama: Rahez <br>
-Facebook: https://www.facebook.com/RahesXWibu <br>
-Tiktok: https://www.tiktok.com/@kenzo_holly <br>
+## ✨ About
+**XFEST** adalah bot Facebook Messenger sederhana yang dibuat untuk otomatisasi, hiburan, dan utilitas dalam chat.
 
-## Credit
-Project ini Bukan asli milik saya pemilik asli project ini adalah https://github.com/HadyZen/Ayanokoji-Kiyotaka (Hady-zen) saya hanya mengubah beberapa file atau memodifikasi nya
-## TUTOR 🜲
+Dirancang dengan fokus pada:
+- ⚡ Performa cepat  
+- 🧠 Struktur modular  
+- 💡 Mudah dikembangkan  
+- 📦 Ringan (cocok untuk VPS spek rendah)  
 
-1. Unduh kiwi browser di play store <br>
-2. Buka url dibawah ini di kiwi browser <br>
-```hady
-https://glitch.com
-```
-3. Masuk ke akun glitch mu atau buat <br>
-4. Buat project baru dan masukkan url ini <br>
-```hady
-https://github.com/RahezGemini/Azura-Akari.git
-```
-5. Unduh cookie editor dibawah ini <br> 
-```hady
-https://raw.githubusercontent.com/HadyZen/Ayanokoji-Kiyotaka/refs/heads/main/hady-zen/kiyotaka/%23cookie.zip
-```
-6. Masukkan file cookie editor ke kiwi extension <br>
-7. Buka url dibawah ini di kiwi browser <br>
-```hady
-https://www.facebook.com
-``` 
-8. Masuk ke akun facebook yang ingin dijadikan bot <br>
-9. Klik titik tiga di kiwi lalu geser kebawah <br>
-10. Pilih cookie editor lalu klik <br>
-11. Klik export atau tanda keluar, pilih format json <br>
-12. Buka file akun.txt di project mu lalu ganti isinya <br>
-13. Ubah kiyotaka.json sebagaimana yang kamu mau <br>
-14. Buka terminal lalu ketik kode ini <br> 
-```hady
-npm start
-```
+---
+
+## 🚀 Features
+- ⚡ Fast Response  
+- 🧠 Modular Command System  
+- 📊 EXP & Level System  
+- 🛠️ Easy Customization  
+- 📦 Lightweight & Efficient  
+- 👥 Group & User Interaction Support  
+
+---
+
+## 📎 Original Project
+
+<p align="center">
+
+<a href="https://github.com/Hady-zen">
+  <img src="https://img.shields.io/badge/FCA%20Base-Hady--zen-181717?style=for-the-badge&logo=github" />
+</a>
+
+<a href="https://github.com/markstroom">
+  <img src="https://img.shields.io/badge/Bot%20Structure-markstroom-181717?style=for-the-badge&logo=github" />
+</a>
+
+</p>
+
+---
+
+### 🔧 FCA (Facebook Chat API)
+> Core utama untuk login & komunikasi dengan Facebook Messenger.
+
+### 🚀 Base Bot Structure
+> Referensi struktur dan sistem command bot.
+
+---
+
+🙏 **Credits**  
+Full credit kepada developer original ❤️  
+Support mereka dengan ⭐ repo GitHub mereka!
+
+---
+
+## 🛠️ Installation
+```bash
+git clone https://github.com/zenith-claud/xfest-facebook-bot
+cd xfest-bot
+npm install
+node index.js
