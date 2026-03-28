@@ -28,7 +28,7 @@ Dirancang dengan fokus pada:
 ## 🚀 Features
 - ⚡ Fast Response  
 - 🧠 Modular Command System  
-- 📊 EXP & Level System  
+- 📊 Run in 512MB Ram and 75% cpu
 - 🛠️ Easy Customization  
 - 📦 Lightweight & Efficient  
 - 👥 Group & User Interaction Support  
@@ -39,11 +39,11 @@ Dirancang dengan fokus pada:
 
 <p align="center">
 
-<a href="https://github.com/Hady-zen">
+<a href="https://github.com/hadyZen">
   <img src="https://img.shields.io/badge/FCA%20Base-Hady--zen-181717?style=for-the-badge&logo=github" />
 </a>
 
-<a href="https://github.com/markstroom">
+<a href="https://github.com/MaskStarmoon/">
   <img src="https://img.shields.io/badge/Bot%20Structure-markstroom-181717?style=for-the-badge&logo=github" />
 </a>
 
