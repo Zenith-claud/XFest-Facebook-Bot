@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00ffff;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        .server-info {
+            padding: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 30%;
+            display: inline-block;
+            color: #ff00ff;
+        }
+
+        .value {
+            width: 70%;
+            display: inline-block;
+            color: #00ff00;
+        }
+
+        .neon-text {
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        .decorative-line {
+            height: 2px;
+            background-color: #333;
+            margin: 20px 0;
+        }
+
+        .decorative-circle {
+            width: 10px;
+            height: 10px;
+            background-color: #00ffff;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">Informasi Server</h1>
+        <div class="decorative-line"></div>
+        <div class="server-info">
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> Nama Server:</span>
+                <span class="value" id="nama-server">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> uptime:</span>
+                <span class="value" id="uptime">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> Node.js:</span>
+                <span class="value" id="node-js">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> Versi:</span>
+                <span class="value" id="versi">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> RAM:</span>
+                <span class="value" id="ram">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> Storage:</span>
+                <span class="value" id="storage">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> CPU:</span>
+                <span class="value" id="cpu">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> OS:</span>
+                <span class="value" id="os">-</span>
+            </div>
+            <div class="info-item">
+                <span class="label"><div class="decorative-circle"></div> Host:</span>
+                <span class="value" id="host">-</span>
+            </div>
+        </div>
+        <div class="decorative-line"></div>
+    </div>
+
+    <script>
+        // URL API yang akan diakses
+        const apiUrl = 'https://your-api-url.com/server-info';
+
+        // Fungsi untuk mengambil data dari API
+        async function getServerInfo() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error:', error);
+                return null;
+            }
+        }
+
+        // Panggil fungsi untuk mengambil dan menampilkan data
+        getServerInfo().then((data) => {
+            if (data) {
+                document.getElementById('nama-server').textContent = data.nama_server;
+                document.getElementById('node-js').textContent = data.node_js;
+                document.getElementById('versi').textContent = data.versi;
+                document.getElementById('ram').textContent = data.ram;
+                document.getElementById('storage').textContent = data.storage;
+                document.getElementById('cpu').textContent = data.cpu;
+                document.getElementById('os').textContent = data.os;
+                document.getElementById('host').textContent = data.host;
+            } else {
+                console.error('Gagal mengambil data');
+            }
+        });
+    </script>
+</body>
+</html>

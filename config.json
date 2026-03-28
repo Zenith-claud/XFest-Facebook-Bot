@@ -1,0 +1,21 @@
+{
+  "nama": "azura akari",
+  "awalan": "-",
+  "port": "3001",
+  "proxy": "114.122.109.208",
+  "bahasa": "id",
+  "notifkey": "",
+  "aikey": "",
+  "chatdm": true,
+  "maintain": false,
+  "zonawaktu": "asia/jakarta",
+  "admin": ["100090298542452"],
+  "web": false,
+  "setting": {
+    "forcelogin": true,
+    "listenevents": true,
+    "updatepresence": true,
+    "listentyping": true,
+    "loglevel": "error"
+  }
+}
